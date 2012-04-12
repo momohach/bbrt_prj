@@ -4,7 +4,7 @@
 //
 //  Created by Snow Leopard User on 12/04/2012.
 //  Copyright 2012 momo_dingua. All rights reserved.
-// test
+// test lion
 
 #import <UIKit/UIKit.h>
 
