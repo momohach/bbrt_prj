@@ -10,7 +10,7 @@
 
 @implementation bbcrtAppDelegate
 
-
+//dingua 
 @synthesize window=_window;
 
 @synthesize managedObjectContext=__managedObjectContext;
