@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE8E71CC153ADD1E008EEB68 /* LessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E71CB153ADD1E008EEB68 /* LessonsViewController.m */; };
 		CEB3D2C115374C11002DAC67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3D2C015374C11002DAC67 /* UIKit.framework */; };
 		CEB3D2C315374C11002DAC67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3D2C215374C11002DAC67 /* Foundation.framework */; };
 		CEB3D2C515374C11002DAC67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3D2C415374C11002DAC67 /* CoreGraphics.framework */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE8E71CA153ADD1E008EEB68 /* LessonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonsViewController.h; sourceTree = "<group>"; };
+		CE8E71CB153ADD1E008EEB68 /* LessonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonsViewController.m; sourceTree = "<group>"; };
 		CEB3D2BC15374C11002DAC67 /* bbcrt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bbcrt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB3D2C015374C11002DAC67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CEB3D2C215374C11002DAC67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -85,6 +88,8 @@
 				CEB3D2D415374C11002DAC67 /* MainWindow.xib */,
 				CEB3D2D715374C11002DAC67 /* bbcrt.xcdatamodeld */,
 				CEB3D2C915374C11002DAC67 /* Supporting Files */,
+				CE8E71CA153ADD1E008EEB68 /* LessonsViewController.h */,
+				CE8E71CB153ADD1E008EEB68 /* LessonsViewController.m */,
 			);
 			path = bbcrt;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 				CEB3D2D015374C11002DAC67 /* main.m in Sources */,
 				CEB3D2D315374C11002DAC67 /* bbcrtAppDelegate.m in Sources */,
 				CEB3D2D915374C11002DAC67 /* bbcrt.xcdatamodeld in Sources */,
+				CE8E71CC153ADD1E008EEB68 /* LessonsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
