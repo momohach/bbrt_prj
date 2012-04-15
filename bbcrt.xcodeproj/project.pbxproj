@@ -226,12 +226,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mohamed Amine HACHFI (F3UDVRX35F)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bbcrt/bbcrt-Prefix.pch";
 				INFOPLIST_FILE = "bbcrt/bbcrt-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CA27E812-66F1-4073-9CB6-B8A7ABBBD72B";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -240,11 +242,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mohamed Amine HACHFI (F3UDVRX35F)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "bbcrt/bbcrt-Prefix.pch";
 				INFOPLIST_FILE = "bbcrt/bbcrt-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "CA27E812-66F1-4073-9CB6-B8A7ABBBD72B";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -269,6 +273,7 @@
 				CEB3D2DE15374C11002DAC67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
