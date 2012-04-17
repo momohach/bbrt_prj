@@ -7,7 +7,8 @@
 // test 1
 
 #import "bbcrtAppDelegate.h"
-
+#import "mainViewController.h"
+#import <dlfcn.h>
 @implementation bbcrtAppDelegate
 
 //dingua aaff
@@ -22,6 +23,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    //[self loadFonts];
+    mainViewController * myMainViewController = [[mainViewController alloc] init];
+    UINavigationController * navigationController = [[UINavigationController alloc]initWithRootViewController:myMainViewController];
+    self.window.rootViewController=navigationController;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -191,5 +197,20 @@
 {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
-
+-(NSUInteger) loadFonts
+{
+    NSUInteger newFontCount = 0;
+    NSBundle *frameworkBundle = [NSBundle bundleWithIdentifier:@"com.apple.GraphicsServices"];
+    const char *frameworkPath = [[frameworkBundle executablePath] UTF8String];
+    if (frameworkPath) {
+        void *graphicsServices = dlopen(frameworkPath, RTLD_NOLOAD | RTLD_LAZY);
+        if (graphicsServices) {
+            BOOL (*GSFontAddFromFile)(const char *) = dlsym(graphicsServices, "GSFontAddFromFile");
+            if (GSFontAddFromFile)
+                for (NSString *fontFile in [[NSBundle mainBundle] pathsForResourcesOfType:@"ttf" inDirectory:nil])
+                    newFontCount += GSFontAddFromFile([fontFile UTF8String]);
+            }
+        }
+    return newFontCount;
+}
 @end

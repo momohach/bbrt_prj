@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface authenticationViewController : UIViewController
+@interface authenticationViewController : UIViewController <UITextFieldDelegate>
+{
+    IBOutlet UITextField * loginTextField;
+    IBOutlet UITextField * passwordTextField;
+}
 
+-(IBAction)gotToHome:(id)sender;
+-(IBAction)logIn:(id)sender;
 @end

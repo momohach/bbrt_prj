@@ -10,4 +10,6 @@
 
 @interface mainViewController : UIViewController
 
+-(IBAction)goToLogin:(id)sender;
+
 @end

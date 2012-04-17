@@ -81,6 +81,8 @@
 		87E304CF153D7BF800AEF2D0 /* bc_splash_960x640.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E304BC153D7BF800AEF2D0 /* bc_splash_960x640.png */; };
 		87E304D3153D7C3E00AEF2D0 /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E304D1153D7C3D00AEF2D0 /* mainViewController.m */; };
 		87E304D4153D7C3E00AEF2D0 /* mainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E304D2153D7C3D00AEF2D0 /* mainViewController.xib */; };
+		87E304DA153DB77F00AEF2D0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E304D9153DB77D00AEF2D0 /* Default.png */; };
+		87E304E4153DD05400AEF2D0 /* AskesHandwriting.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87E304E3153DD04E00AEF2D0 /* AskesHandwriting.ttf */; };
 		CE8E71CC153ADD1E008EEB68 /* LessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E71CB153ADD1E008EEB68 /* LessonsViewController.m */; };
 		CEB3D2C115374C11002DAC67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3D2C015374C11002DAC67 /* UIKit.framework */; };
 		CEB3D2C315374C11002DAC67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3D2C215374C11002DAC67 /* Foundation.framework */; };
@@ -170,6 +172,8 @@
 		87E304D0153D7C3D00AEF2D0 /* mainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainViewController.h; sourceTree = "<group>"; };
 		87E304D1153D7C3D00AEF2D0 /* mainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainViewController.m; sourceTree = "<group>"; };
 		87E304D2153D7C3D00AEF2D0 /* mainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainViewController.xib; sourceTree = "<group>"; };
+		87E304D9153DB77D00AEF2D0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		87E304E3153DD04E00AEF2D0 /* AskesHandwriting.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AskesHandwriting.ttf; sourceTree = "<group>"; };
 		CE8E71CA153ADD1E008EEB68 /* LessonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonsViewController.h; sourceTree = "<group>"; };
 		CE8E71CB153ADD1E008EEB68 /* LessonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonsViewController.m; sourceTree = "<group>"; };
 		CEB3D2BC15374C11002DAC67 /* bbcrt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bbcrt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -263,6 +267,7 @@
 		87E304A8153D7BE000AEF2D0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				87E304E3153DD04E00AEF2D0 /* AskesHandwriting.ttf */,
 				87E304A9153D7BF800AEF2D0 /* mockup screens */,
 				87E30441153D7B7000AEF2D0 /* GUI components */,
 			);
@@ -298,6 +303,7 @@
 		CEB3D2B115374C10002DAC67 = {
 			isa = PBXGroup;
 			children = (
+				87E304D9153DB77D00AEF2D0 /* Default.png */,
 				CEB3D2C815374C11002DAC67 /* bbcrt */,
 				CEB3D2BF15374C11002DAC67 /* Frameworks */,
 				CEB3D2BD15374C11002DAC67 /* Products */,
@@ -479,6 +485,8 @@
 				87E304CE153D7BF800AEF2D0 /* bc_speechrecognition_960x64.png in Resources */,
 				87E304CF153D7BF800AEF2D0 /* bc_splash_960x640.png in Resources */,
 				87E304D4153D7C3E00AEF2D0 /* mainViewController.xib in Resources */,
+				87E304DA153DB77F00AEF2D0 /* Default.png in Resources */,
+				87E304E4153DD05400AEF2D0 /* AskesHandwriting.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

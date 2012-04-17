@@ -33,6 +33,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [((UILabel*)[self.view viewWithTag:1])  setFont:[UIFont fontWithName:@"AskesHandwriting" size:34*1.2]];
+    [((UILabel*)[self.view viewWithTag:2])  setFont:[UIFont fontWithName:@"AskesHandwriting" size:19*1.2]];
+    [((UILabel*)[self.view viewWithTag:3])  setFont:[UIFont fontWithName:@"AskesHandwriting" size:19*1.2]];
+    [((UILabel*)[self.view viewWithTag:4])  setFont:[UIFont fontWithName:@"AskesHandwriting" size:22*1.2]];
+    [((UILabel*)[self.view viewWithTag:5])  setFont:[UIFont fontWithName:@"AskesHandwriting" size:14*1.2]];
+    [((UILabel*)[self.view viewWithTag:6])  setFont:[UIFont fontWithName:@"AskesHandwriting" size:14*1.2]];
 }
 
 - (void)viewDidUnload
@@ -47,5 +53,18 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
+-(IBAction)gotToHome:(id)sender
+{
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+-(IBAction)logIn:(id)sender
+{
+    
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    
+    return YES;
+}
 @end

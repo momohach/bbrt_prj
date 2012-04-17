@@ -7,6 +7,7 @@
 //
 
 #import "mainViewController.h"
+#import "authenticationViewController.h"
 
 @implementation mainViewController
 
@@ -31,6 +32,10 @@
 
 - (void)viewDidLoad
 {
+    self.navigationController.navigationBarHidden=YES;
+    UILabel * lable = [[UILabel alloc] initWithFrame:CGRectMake(50, 50, 150, 50)];
+    [lable release];
+    [((UILabel*)[self.view viewWithTag:1])  setFont:[UIFont fontWithName:@"AskesHandwriting" size:26*1.3]];
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
@@ -47,5 +52,9 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
+-(IBAction)goToLogin:(id)sender
+{
+    authenticationViewController * myAuthenticationViewController = [[authenticationViewController alloc]init];
+    [self.navigationController pushViewController:myAuthenticationViewController animated:YES];
+}
 @end
