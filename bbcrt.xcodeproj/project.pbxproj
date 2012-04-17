@@ -83,6 +83,10 @@
 		87E304D4153D7C3E00AEF2D0 /* mainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E304D2153D7C3D00AEF2D0 /* mainViewController.xib */; };
 		87E304DA153DB77F00AEF2D0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E304D9153DB77D00AEF2D0 /* Default.png */; };
 		87E304E4153DD05400AEF2D0 /* AskesHandwriting.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 87E304E3153DD04E00AEF2D0 /* AskesHandwriting.ttf */; };
+		87E304E8153DDB9800AEF2D0 /* MyLessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E304E6153DDB8E00AEF2D0 /* MyLessonsViewController.m */; };
+		87E304E9153DDB9800AEF2D0 /* MyLessonsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E304E7153DDB9400AEF2D0 /* MyLessonsViewController.xib */; };
+		87E304ED153DE42800AEF2D0 /* SpeetchRecognitionLessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87E304EB153DE41D00AEF2D0 /* SpeetchRecognitionLessonViewController.m */; };
+		87E304EE153DE42800AEF2D0 /* SpeetchRecognitionLessonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87E304EC153DE42200AEF2D0 /* SpeetchRecognitionLessonViewController.xib */; };
 		CE8E71CC153ADD1E008EEB68 /* LessonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8E71CB153ADD1E008EEB68 /* LessonsViewController.m */; };
 		CEB3D2C115374C11002DAC67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3D2C015374C11002DAC67 /* UIKit.framework */; };
 		CEB3D2C315374C11002DAC67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB3D2C215374C11002DAC67 /* Foundation.framework */; };
@@ -174,6 +178,12 @@
 		87E304D2153D7C3D00AEF2D0 /* mainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainViewController.xib; sourceTree = "<group>"; };
 		87E304D9153DB77D00AEF2D0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		87E304E3153DD04E00AEF2D0 /* AskesHandwriting.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AskesHandwriting.ttf; sourceTree = "<group>"; };
+		87E304E5153DDB8900AEF2D0 /* MyLessonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLessonsViewController.h; sourceTree = "<group>"; };
+		87E304E6153DDB8E00AEF2D0 /* MyLessonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLessonsViewController.m; sourceTree = "<group>"; };
+		87E304E7153DDB9400AEF2D0 /* MyLessonsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyLessonsViewController.xib; sourceTree = "<group>"; };
+		87E304EA153DE41900AEF2D0 /* SpeetchRecognitionLessonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeetchRecognitionLessonViewController.h; sourceTree = "<group>"; };
+		87E304EB153DE41D00AEF2D0 /* SpeetchRecognitionLessonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeetchRecognitionLessonViewController.m; sourceTree = "<group>"; };
+		87E304EC153DE42200AEF2D0 /* SpeetchRecognitionLessonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpeetchRecognitionLessonViewController.xib; sourceTree = "<group>"; };
 		CE8E71CA153ADD1E008EEB68 /* LessonsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonsViewController.h; sourceTree = "<group>"; };
 		CE8E71CB153ADD1E008EEB68 /* LessonsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonsViewController.m; sourceTree = "<group>"; };
 		CEB3D2BC15374C11002DAC67 /* bbcrt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bbcrt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -346,6 +356,12 @@
 				87E304D0153D7C3D00AEF2D0 /* mainViewController.h */,
 				87E304D1153D7C3D00AEF2D0 /* mainViewController.m */,
 				87E304D2153D7C3D00AEF2D0 /* mainViewController.xib */,
+				87E304E5153DDB8900AEF2D0 /* MyLessonsViewController.h */,
+				87E304E6153DDB8E00AEF2D0 /* MyLessonsViewController.m */,
+				87E304E7153DDB9400AEF2D0 /* MyLessonsViewController.xib */,
+				87E304EA153DE41900AEF2D0 /* SpeetchRecognitionLessonViewController.h */,
+				87E304EB153DE41D00AEF2D0 /* SpeetchRecognitionLessonViewController.m */,
+				87E304EC153DE42200AEF2D0 /* SpeetchRecognitionLessonViewController.xib */,
 			);
 			path = bbcrt;
 			sourceTree = "<group>";
@@ -487,6 +503,8 @@
 				87E304D4153D7C3E00AEF2D0 /* mainViewController.xib in Resources */,
 				87E304DA153DB77F00AEF2D0 /* Default.png in Resources */,
 				87E304E4153DD05400AEF2D0 /* AskesHandwriting.ttf in Resources */,
+				87E304E9153DDB9800AEF2D0 /* MyLessonsViewController.xib in Resources */,
+				87E304EE153DE42800AEF2D0 /* SpeetchRecognitionLessonViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +521,8 @@
 				CE8E71CC153ADD1E008EEB68 /* LessonsViewController.m in Sources */,
 				87E3043E153D784E00AEF2D0 /* authenticationViewController.m in Sources */,
 				87E304D3153D7C3E00AEF2D0 /* mainViewController.m in Sources */,
+				87E304E8153DDB9800AEF2D0 /* MyLessonsViewController.m in Sources */,
+				87E304ED153DE42800AEF2D0 /* SpeetchRecognitionLessonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,9 +7,10 @@
 //
 
 #import "authenticationViewController.h"
+#import "MyLessonsViewController.h"
 
 @implementation authenticationViewController
-
+@synthesize loginTextField, passwordTextField;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -57,14 +58,26 @@
 {
     [self.navigationController popToRootViewControllerAnimated:YES];
 }
+-(NSString*)userIdentity:(NSString*)login pass:(NSString*)pass
+{
+    return @"student";
+}
+
 -(IBAction)logIn:(id)sender
 {
+    NSLog(@"login : %@, password : %@",loginTextField.text, passwordTextField.text);
+    NSString * userIdentity = [self userIdentity:loginTextField.text pass:passwordTextField.text];
+    if ([userIdentity isEqualToString:@"student"] ) {
+        MyLessonsViewController * myLessonsViewController = [[MyLessonsViewController alloc] init];
+        [self.navigationController pushViewController:myLessonsViewController animated:YES];
+    }
     
 }
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
-    
     return YES;
 }
+
+
 @end

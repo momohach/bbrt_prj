@@ -13,7 +13,8 @@
     IBOutlet UITextField * loginTextField;
     IBOutlet UITextField * passwordTextField;
 }
-
+@property (nonatomic, retain) IBOutlet UITextField * loginTextField;
+@property (nonatomic, retain) IBOutlet UITextField * passwordTextField;
 -(IBAction)gotToHome:(id)sender;
 -(IBAction)logIn:(id)sender;
 @end
